@@ -1,0 +1,19 @@
+Ordinal calculator Release 3 files
+
+ordInstall.exe - installer for Win32 including all documentation
+
+ordCalc_0.3exe.zip - executable and documentation for Win32 no install needed
+
+ordCalc_0.3exe.tar.gz - executable and documentation for Win32 no install needed
+
+ordCalc_0.3.tar.gz - complete source code and documentation - builds on Linux,
+                     Unix and Windows 32 with Visual C++
+
+ordCalc_0.3.tar.bz2 - complete source code and documentation - builds on
+                      Linux, Unix and Windows 32 with Visual C++
+
+ordCalc.pdf - documentation for the interactive ordinal calculator
+              (included in all non PDF files)
+
+ordinal.pdf - documentation giving underlying mathematics and reference as
+              well as program structure  (included in all non PDF files)

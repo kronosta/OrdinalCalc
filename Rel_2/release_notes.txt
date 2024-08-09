@@ -1,0 +1,21 @@
+Release notes for ordCalc version 0.2.0
+
+This is the second release of the ordinal calculator. It corrects bugs
+in version 0.1.0. The major problems corrected from that release are exiting
+instead of crashing on user end of file and a corrected comparison that in
+rare cases produced incorrect results.  Spelling errors and typos were also
+corrected. This remains a beta release because it the programs functions
+have been substantially expanded.
+
+Version 0.1.0 supported ordinal notation up to but not including the
+large Veblen ordinal. This version (0.2.0) supports recursive ordinals up to
+and somewhat beyond the Bachmann-Howard ordinal. This is accomplished by
+supporting notations for countable ordinals greater than the Church-Kleene
+ordinal (the ordinal of the recursive ordinals) and using a new form of
+ordinal collapsing on these nonrecursive ordinals to construct large
+recursive ordinals.
+
+The Microsoft Windows version of this program has a known problem with
+line editing. If you have CYGWIN installed you can fix this problem by
+installing ord.exe in the CYGWIN bin directory. To do this you may need
+to rebuild ord.exe under your version of CYGWIN

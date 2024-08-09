@@ -1,0 +1,74 @@
+                                OrdCalc
+        An interactive tool to understand the recursive ordinals
+
+'ord' is a program for understanding the recursive ordinals.
+It has a command line interpreter resembling command line calculators.
+See 'ordCalc.pdf' for a brief description of how to use the interpreter.
+See 'ordinal.pdf' for a description of the structure of the program and the
+theory on which it is based.
+
+This project is licensed for free use and distribution under the terms
+of the GNU GENERAL PUBLIC LICENSE, Version 2, June 1991. See file COPYING for
+complete information. Users are encouraged to extend the capabilities of this
+program and distribute it under the terms of this license.
+
+DOWNLOAD LOCATIONS:
+
+http://www.mtnmath.com/ord
+https://sourceforge.net/projects/ord
+
+OTHER VERSIONS:
+
+In addition to the source code version that should
+build on many Linux and other Unix computers.
+there is a prebuilt Microsoft Windows installation
+available. That version is built with CYGWIN. Different
+releases of CYGWIN may use different incompatible versions of
+'cygwin1.dll'. Only one version of a 'dll' file can be in
+use at the same time. Thus you may not be able to run 'ord'
+while running other CYGWIN tools and vice versa.
+
+REQUIREMENTS:
+
+To build 'ord' you must have The GNU MP Bignum library including the C++
+library installed. You may be able to do this with "yum install gmp".  This
+package is also available at "gmplib.org".
+
+You also need the GNU 'readline' library. You may be able to do:
+"yum install readline". If not, you can get the library at:
+"gnuwin32.sourceforge.net/packages/readline.htm".
+
+INSTALLATION:
+
+To build the program on most Linux and many other Unix based
+platforms type 'make' in this directory. The output is file 'ord'
+in subdirectory 'src' and a series of tests to validate the installation.
+There should be a log of test results in src/test.log
+
+To run these tests again type 'make TEST' in this directory or 'src'. 
+
+BUILDING DOCUMENTATION:
+
+To build the program and documentation type 'make ALL' in this directory.
+There should be a prebuilt version of the documentation (ordinal.pdf and
+ordCalc.pdf) in this directory. There is no need to build them unless
+you edit the documentation.
+
+A portion of the documentation is created by program 'ord' and it must
+be built first. You need to have a fairly complete TeX/LaTeX installation to
+build the documentation. To do so type 'make DOC' in this top level directory.
+
+LONG TERM AIM:
+
+In addition to serving as a tutorial tool to understand the recursive
+ordinals, this is intended as one possible basis for extending the ordinal
+hierarchy and thus the power of mathematics. It is, in theory, possible
+to define a recursive ordinal strong enough to prove the consistency of
+Zermelo-Frankel set theory and go way beyond this, but the complexity of
+the structures required soon becomes overwhelming. Computer Science has,
+over the decades, learned a great deal about dealing with overwhelming
+complexity. Applying these techniques to the foundations of mathematics
+may allow significant extensions of that discipline. However, the
+indirect approach, that must be used, is alien to the philosophy of
+mathematics that wants direct human understanding of all proofs.
+

@@ -1,0 +1,98 @@
+                                ordCalc_0.3.2
+
+This is an interactive tool to understand and perhaps eventually expand
+notations for countable ordinals.
+
+It has a command line interpreter resembling calculators.
+See 'ordCalc.pdf' for a description of how to use the interpreter.
+See 'ordinal.pdf' for a description of the structure of the program and the
+theory on which it is based.
+
+The source code and documentation  is licensed for use and
+distribution under the terms of the GNU GENERAL PUBLIC LICENSE, Version 2,
+June 1991. See file COPYING for complete information. Some of the libraries
+this code links to are under version 3 of GNU LESSER GENERAL PUBLIC LICENSE.
+Use and distribution of the executable has additional restrictions. File
+COPYING also contains a copy of this license.
+
+DOWNLOAD LOCATIONS:
+
+http://www.mtnmath.com/ord
+https://sourceforge.net/projects/ord
+
+VERSIONS:
+
+A Microsoft Windows installation built with Visual C++ is available as either
+a stand alone executable or a standard installation file. It runs on windows
+XP and later and on the Wine Windows emulator.
+
+The source code version should build on most Linux and many Unix systems.
+It also has support for a build under Visual C++.
+
+
+REQUIREMENTS:
+
+The Win32 executable ord.exe requires no additional support. It has been
+tested on XP and Windows 7 and is assumed to work on Vista. It also works on
+Wine, the Windows' emulator.
+
+The source build on Linux requires the mpir ( http://mpir.org ) and
+readline ( http://directory.fsf.org/project/readline/ ) libraries. The
+largely compatible gmp ( http://gmplib.org" ) library can be used
+instead of mpir by modifying the Makefile in ordCalc_0.3.2/src
+
+The source build on Visual C++ requires the mpir ( http://mpir.org ) 
+libraries.
+
+
+BUILDING ordCalc_0.3.2 under Linux/Unix
+
+First make sure you have the mpir and readline libraries and development
+packages installed. This includes mpir.lib mpirxx.lib, mpir.h, mpirxx.h,
+readline.lib, readline/readline.h and readline/history.h
+
+If these are not installed you may be able to include them with the
+commands as super user:
+yum install mpir-devel
+yum install readline-devel
+
+To build the program on most Linux and Unix based
+platforms type 'make' in this directory. The output is file 'ord'
+in subdirectory 'src' and a series of tests to validate the installation.
+There should be a log of test results in src/test.log
+
+To run these tests again type 'make TEST' in this directory or 'src'.
+
+BUILDING ordCalc_0.3.2 Windows and Visual C++
+
+You will probably need to download the source for the mpir multiprecision
+arithmetic package and build it.  The existing build for ordCalc_0.3.2 uses
+static libraries and is a release build. It assumes the mpir libraries
+(mpir.lib and mpirxx.lib) are in ordCalc_0.3.2/src/msw/mswLib/Debug or
+ordCalc_0.3.2/src/msw/mswLib/Release depending on the build type.
+It also assumes the mpir includes (mpir.h and mpirxx.h)
+are in ordCalc_0.3.2/src/msw/mswInc. Once
+you have downloaded or built these and put them in place your can click
+on the Visual C++ file: ordCalc_0.3.2/src/msw/ordCalc_0.3.2/ordCalc_0.3.2.sln
+to load the build for ordCalc_0.3.2 into Visual C++.
+
+To run the full validation tests you also need to have installed Cygwin.
+In a Cygwin window go to directory ordCalc_0.3.2/src and enter the command
+bash mswTest.sh
+
+
+BUILDING DOCUMENTATION under Linux/Unix or CYGWIN under Windows:
+
+To build the program and documentation type 'make ALL' in this directory.
+There should be a prebuilt version of the documentation (ordinal.pdf and
+ordCalc.pdf) in this directory. There is no need to build them unless
+you edit the documentation.
+
+A portion of the documentation is created by program 'ord' and it must
+be built first. You need to have a fairly complete TeX/LaTeX installation to
+build the documentation. To do so type 'make DOC' in this top level directory.
+
+
+
+
+

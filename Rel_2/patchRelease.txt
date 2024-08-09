@@ -1,0 +1,13 @@
+Some problems have been encountered in this release in validation under
+NetBSD and they many affect other operating systems. These only affect the
+validation output and not the functioning of the ordinal calculator itself.
+
+'patch1', contributed by Ignatios Souvatzis, should be used in the 'src'
+directory to fix a problem in the order in which validation output is
+displayed.  (Type 'patch < patch1' in that directory).
+
+In addition line 40 in the Makefile in the 'src' directory should be changed
+from "time bash srTest.sh 2>&1 | tee test.log"
+to "bash srTest.sh | tee test.log" to avoid the possibility that the timing
+output will be merged with the summary statistics in a confusing way.
+

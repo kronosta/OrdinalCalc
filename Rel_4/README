@@ -1,0 +1,21 @@
+Ordinal calculator Release 0.3.1 files
+
+This release corrects the definition of the Gamma function on the ordinals and fixes some minor bugs. It has expanded documentation
+
+ordInstall.exe - installer for Win32 including all documentation
+
+ordCalc_0.3.1_exe.zip - executable and documentation for Win32 no install needed
+
+ordCalc_0.3.1_exe.tar.gz - executable and documentation for Win32 no install needed
+
+ordCalc_0.3.1.tar.gz - complete source code and documentation - builds on Linux,
+                     Unix and Windows 32 with Visual C++
+
+ordCalc_0.3.1.tar.bz2 - complete source code and documentation - builds on
+                      Linux, Unix and Windows 32 with Visual C++
+
+ordCalc.pdf - documentation for the interactive ordinal calculator
+              (included in all non PDF files)
+
+ordinal.pdf - documentation giving underlying mathematics and reference as
+              well as program structure  (included in all non PDF files)
